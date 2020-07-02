@@ -1,6 +1,5 @@
- <!-- https://api.telegram.org/bot1358494187:AAFoBe-NGTDWqtvEWyc-qRfIIwSCRYAl5Ok/getUpdates --> 
+ <?php
 
-<?php
 $name = $_POST ['user-name'];
 $phone = $_POST ['user-phone'];
 $email = $_POST ['user-email'];
@@ -12,20 +11,16 @@ $arr = array(
 	'Email: ' => $email
 );
 
-foreach ($arr as $key => $value) {
-	$txt .= "<b>".$key. "</b> ". $value. "%0A";
+foreach($arr as $key => $value) {
+	$txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
 
 if ($sendToTelegram) {
-	header('thank-you.html');
-
+	header('Location: thank-you.html');
 }else {
 	echo "Error";
 }
-
-
-
 ?>
 

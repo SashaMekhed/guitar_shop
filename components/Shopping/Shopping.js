@@ -27,7 +27,7 @@ class Shopping {
                     ${htmlCatalog}
 
 <div class="form-post">
-                    <form action="telegram.php" method="POST">
+                    <form action="js-guitar-shop-master/telegram.php" method="POST">
                 <div class="form-group">
                     <label for="">Введите ваше имя</label>
                     <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
