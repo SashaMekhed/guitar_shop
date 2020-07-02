@@ -24,9 +24,8 @@ class Shopping {
             <div class="shopping-container">
                 <div class="shopping__close" onclick="shoppingPage.handlerClear();"></div>
                 <table>
-                    ${htmlCatalog}
 
-<div class="form-post">
+                <div class="form-post">
                     <form action="js-guitar-shop-master/telegram.php" method="POST">
                 <div class="form-group">
                     <label for="">Введите ваше имя</label>
@@ -45,6 +44,7 @@ class Shopping {
                 
                 <button type="submit" class="btn btn-primary">Отправить форму</button>
             </form>
+                    ${htmlCatalog}
 
                     <tr>
                         <td class="shopping-element__name">💥 Сумма:</td>
