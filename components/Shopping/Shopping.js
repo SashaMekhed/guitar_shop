@@ -27,7 +27,7 @@ class Shopping {
                     ${htmlCatalog}
 
 <div class="form-post">
-                    <form action="telegram/telegram.php" method="POST">
+                    <form action="telegram.php" method="POST">
                 <div class="form-group">
                     <label for="">Введите ваше имя</label>
                     <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
@@ -45,7 +45,7 @@ class Shopping {
                 
                 <button type="submit" class="btn btn-primary">Отправить форму</button>
             </form>
-                    
+
                     <tr>
                         <td class="shopping-element__name">💥 Сумма:</td>
                         <td class="shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
